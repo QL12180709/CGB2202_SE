@@ -2,61 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfb136e5-f803-4c6e-9503-6a420e6de138" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/ThreadDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/ThreadDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/ThreadDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/CurrentThreadDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day01/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day01/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day02/DataTypeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day02/DataTypeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day02/VarDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day02/VarDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day03/IfDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day03/IfDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day03/IfElseDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day03/IfElseDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day03/OperDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day03/OperDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day03/YearDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day03/YearDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/CommandBySwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/CommandBySwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/Guessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/Guessing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/MultiplicationTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/MultiplicationTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/ScannerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/ScannerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/ScoreLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/ScoreLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/SwitchCaseDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/SwitchCaseDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/WhileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/WhileDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/homework/DaysOfTheMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/homework/DaysOfTheMonth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/homework/JudgeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/homework/JudgeDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/homework/SumDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day04/homework/SumDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/Addition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day05/Addition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/ArrayDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day05/ArrayDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/ForDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day05/ForDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/MultiTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day05/MultiTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/Scores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day05/Scores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/homework/EvenSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day05/homework/EvenSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/homework/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day05/homework/Factorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/homework/PrintTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day05/homework/PrintTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day06/ArrayDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day06/ArrayDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day06/ArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day06/ArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day06/Extend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day06/Extend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day06/MathodDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day06/MathodDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day06/MaxOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day06/MaxOfArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day06/MaxOfArray01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day06/MaxOfArray01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day06/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/day06/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday01/Aoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday01/Aoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday01/OverLoadDeno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday01/OverLoadDeno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday01/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday01/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday01/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday01/StudentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday02/ConsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday02/ConsDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday02/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday02/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday03/RefArrayDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday03/RefArrayDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday03/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday03/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/Aoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/Aoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/Boo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/Boo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/MouseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/MouseInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ooday04/UploadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/firststate/ooday04/UploadDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Thread/ThreadDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thread/ThreadDemo3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,13 +49,13 @@
       <recent name="E:\Projects\IdeaProjects\CGB2202\resource" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThreadDemo3">
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="firststate.day01.HelloWorld" />
+  <component name="RunManager" selected="Application.CurrentThreadDemo">
+    <configuration name="CurrentThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.CurrentThreadDemo" />
       <module name="CGB2202" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="firststate.day01.*" />
+          <option name="PATTERN" value="Thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="socket.Server" />
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="firststate.day01.HelloWorld" />
       <module name="CGB2202" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="socket.*" />
+          <option name="PATTERN" value="firststate.day01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,19 +127,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Server" />
       <item itemvalue="Application.ThreadDemo1" />
       <item itemvalue="Application.ThreadDemo2" />
       <item itemvalue="Application.HelloWorld" />
       <item itemvalue="Application.ThreadDemo3" />
+      <item itemvalue="Application.CurrentThreadDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CurrentThreadDemo" />
         <item itemvalue="Application.ThreadDemo3" />
         <item itemvalue="Application.HelloWorld" />
         <item itemvalue="Application.ThreadDemo2" />
         <item itemvalue="Application.ThreadDemo1" />
-        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +156,7 @@
       <workItem from="1648689152635" duration="130000" />
       <workItem from="1648689335158" duration="3266000" />
       <workItem from="1648693097737" duration="1044000" />
-      <workItem from="1648694755663" duration="16631000" />
+      <workItem from="1648694755663" duration="18503000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1648643639401</created>
@@ -252,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648713405854</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="第一次提交">
+      <created>1648717548632</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1648717548632</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

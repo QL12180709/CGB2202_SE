@@ -19,13 +19,13 @@ public class ThreadDemo3 {
                 System.out.println(1);
 
             }
+            System.out.println(Thread.currentThread());
         });
 
 //         第二种：实现Runnable接口单独定义线程任务的形式
         Runnable r2= () -> {
             for (int i = 0; i < 10000; i++) {
                 System.out.println(2222222);
-
             }
         };
 //        Runnable r2= new Runnable() {
@@ -38,6 +38,12 @@ public class ThreadDemo3 {
 //
 //            }
 //        };
+
+        /*
+        * 启动线程调用的是线程的start方法，不能直接调用run方法
+        * start方法调用后线程会被纳入到线程调度器中被统一管理。当它第一次获取了调度器
+        *  分配给它的CPU时间片后就会开始执行run方法。
+        * */
         Thread t2 = new Thread(r2);
         t1.start();
         t2.start();
