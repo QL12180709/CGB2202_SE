@@ -36,9 +36,13 @@ public class Client {
 
 //            本机IP地址：localhost
             System.out.println("正在连接服务端...");
-            socket = new Socket("10.1.188.86", 8088);
+//            socket = new Socket("10.1.188.86", 8088);
 //            socket = new Socket("10.1.188.98", 8088);
 //            socket = new Socket("10.1.188.103", 8080);
+            socket = new Socket("192.168.86.95", 8088);
+
+//            socket = new Socket("", 8080);
+
             System.out.println("与服务端建立连接了！");
         } catch (IOException e) {
             e.printStackTrace();
@@ -55,22 +59,32 @@ public class Client {
             BufferedWriter bw = new BufferedWriter(osw);
             PrintWriter pw = new PrintWriter(bw, true);
 
+            //通过socket获取输入流读取服务端发送过来的消息
+            InputStream in = socket.getInputStream();
+            InputStreamReader isr = new InputStreamReader(in,StandardCharsets.UTF_8);
+            BufferedReader br = new BufferedReader(isr);
+
+
             Scanner scanner = new Scanner(System.in);
             while (true) {
+                System.out.print("请输入要对服务端说的话:");
                 String s = scanner.nextLine();
                 if ("exit".equalsIgnoreCase(s)) {
                     break;
                 }
                 pw.println(s);
+                s=br.readLine();
+                System.out.println(s);
+
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 /*
-                * Socket提供了close()方法，可以与远端计算机断开连接。
-                * 该方法调用时，也会自动关闭通过它获取的输入流和输出流。
-                * */
+                 * Socket提供了close()方法，可以与远端计算机断开连接。
+                 * 该方法调用时，也会自动关闭通过它获取的输入流和输出流。
+                 * */
                 socket.close();
             } catch (IOException e) {
                 e.printStackTrace();

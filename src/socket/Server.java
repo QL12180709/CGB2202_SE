@@ -1,11 +1,10 @@
 package socket;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
 
 public class Server {
     /**
@@ -37,7 +36,6 @@ public class Server {
     }
 
     public void start() {
-
         try {
             /*
              * ServerSocket的accept方法是一个阻塞方法。
@@ -45,31 +43,17 @@ public class Server {
              * 阻塞方法：调用后，程序就“卡住”不动了
              *
              * */
-
-            System.out.println("等待客户端连接...");
             int count = 0;
+            System.out.println("等待客户端连接...");
             while (true) {
                 Socket socket = serverSocket.accept();
                 count++;
                 System.out.println(count + "个客户端连接了！");
+//                启动一个线程来处理该客户端的交互
+                ClientHandler clientHandler = new ClientHandler(socket);
+                Thread thread = new Thread(clientHandler);
+                thread.start();
 
-
-//            通过socket获取输入流读取对方发送过来的消息
-                InputStream in = socket.getInputStream();
-                InputStreamReader isr = new InputStreamReader(in);
-                BufferedReader br = new BufferedReader(isr);
-                String s = null;
-                /*
-                 * 这里的BufferedReader读取时低下连接的流是通过Socket获取的输入流
-                 * 当远端计算机还处于连接状态，但是暂时没有发送内容，readLine方法会
-                 *  处于阻塞状态，直到对方发送过来一行字符串为止。
-                 *  如果返回值为null，则表示对方断开了连接(对方调用了socket.close())。
-                 *
-                 *
-                 * */
-                while ((s = br.readLine()) != null) {
-                    System.out.println("客户端说：" + s);
-                }
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -80,6 +64,66 @@ public class Server {
     public static void main(String[] args) {
         Server server = new Server();
         server.start();
+    }
+
+
+    //    该线程任务是用一个线程来处理一个客户端的交互工作
+    private class ClientHandler implements Runnable {
+        private Socket socket;
+        private String host;//记录远端计算机的地址信息
+
+        public ClientHandler(Socket socket) {
+            this.socket = socket;
+            host = socket.getInetAddress().getHostAddress();
+        }
+
+        @Override
+        public void run() {
+            Runnable r1 = new Runnable() {
+                @Override
+                public void run() {
+                    InputStream in = null;
+                    try {
+                        in = socket.getInputStream();
+                        InputStreamReader isr = new InputStreamReader(in,StandardCharsets.UTF_8);
+                        BufferedReader br = new BufferedReader(isr);
+
+                        OutputStream out = socket.getOutputStream();
+                        OutputStreamWriter osw = new OutputStreamWriter(out,StandardCharsets.UTF_8);
+                        BufferedWriter bw = new BufferedWriter(osw);
+                        PrintWriter pw = new PrintWriter(bw,true);
+
+                        Scanner scanner = new Scanner(System.in);
+
+
+                        String s = null;
+
+                        //            通过socket获取输入流读取对方发送过来的消息
+                        /*
+                         * 这里的BufferedReader读取时低下连接的流是通过Socket获取的输入流
+                         * 当远端计算机还处于连接状态，但是暂时没有发送内容，readLine方法会
+                         *  处于阻塞状态，直到对方发送过来一行字符串为止。
+                         *  如果返回值为null，则表示对方断开了连接(对方调用了socket.close())。
+                         *
+                         *
+                         * */
+                        while ((s = br.readLine()) != null) {
+                            System.out.println("客户端"+host+"说：" + s);
+                            s = scanner.nextLine();
+                            pw.println("服务端说："+s);
+                        }
+                    } catch (IOException e) {
+//                        e.printStackTrace();
+                    }finally {
+
+                    }
+                }
+            };
+            Thread t1 = new Thread(r1);
+            t1.start();
+
+
+        }
     }
 
 }

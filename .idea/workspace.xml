@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfb136e5-f803-4c6e-9503-6a420e6de138" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/src/Thread/CurrentThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/DaemonThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/PriorityDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/SleepDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/SleepDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/SyncDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/SyncDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/SyncDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/SyncDemo4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Thread/ThreadInfoDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/socket/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thread/ThreadDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thread/ThreadDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/Client1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,12 +25,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="276bExQAldbzvxzgUtb4R79YBV5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -35,12 +55,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Thread" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\IdeaProjects\CGB2202_SE\src\Thread" />
       <recent name="E:\Projects\IdeaProjects\CGB2202\resource" />
       <recent name="E:\Projects\IdeaProjects\CGB2202" />
     </key>
@@ -49,9 +70,35 @@
       <recent name="E:\Projects\IdeaProjects\CGB2202\resource" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CurrentThreadDemo">
-    <configuration name="CurrentThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.CurrentThreadDemo" />
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.Client" />
+      <module name="CGB2202" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.Server" />
+      <module name="CGB2202" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SyncDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.SyncDemo2" />
       <module name="CGB2202" />
       <extension name="coverage">
         <pattern>
@@ -63,21 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="firststate.day01.HelloWorld" />
-      <module name="CGB2202" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="firststate.day01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadDemo1" />
+    <configuration name="SyncDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.SyncDemo3" />
       <module name="CGB2202" />
       <extension name="coverage">
         <pattern>
@@ -89,21 +123,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadDemo2" />
-      <module name="CGB2202" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.ThreadDemo3" />
+    <configuration name="SyncDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Thread.SyncDemo4" />
       <module name="CGB2202" />
       <extension name="coverage">
         <pattern>
@@ -127,19 +148,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ThreadDemo1" />
-      <item itemvalue="Application.ThreadDemo2" />
-      <item itemvalue="Application.HelloWorld" />
-      <item itemvalue="Application.ThreadDemo3" />
-      <item itemvalue="Application.CurrentThreadDemo" />
+      <item itemvalue="Application.SyncDemo2" />
+      <item itemvalue="Application.SyncDemo3" />
+      <item itemvalue="Application.SyncDemo4" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Client" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CurrentThreadDemo" />
-        <item itemvalue="Application.ThreadDemo3" />
-        <item itemvalue="Application.HelloWorld" />
-        <item itemvalue="Application.ThreadDemo2" />
-        <item itemvalue="Application.ThreadDemo1" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.SyncDemo4" />
+        <item itemvalue="Application.SyncDemo3" />
+        <item itemvalue="Application.SyncDemo2" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +177,16 @@
       <workItem from="1648689152635" duration="130000" />
       <workItem from="1648689335158" duration="3266000" />
       <workItem from="1648693097737" duration="1044000" />
-      <workItem from="1648694755663" duration="18503000" />
+      <workItem from="1648694755663" duration="19127000" />
+      <workItem from="1648724457530" duration="1771000" />
+      <workItem from="1648773525333" duration="994000" />
+      <workItem from="1648775419890" duration="3130000" />
+      <workItem from="1648778834199" duration="4250000" />
+      <workItem from="1648784010450" duration="6885000" />
+      <workItem from="1648798436997" duration="688000" />
+      <workItem from="1648799555953" duration="7920000" />
+      <workItem from="1648811582312" duration="734000" />
+      <workItem from="1648861470524" duration="3062000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1648643639401</created>
@@ -207,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648717548632</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="第一次提交">
+      <created>1648719438806</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648719438806</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
