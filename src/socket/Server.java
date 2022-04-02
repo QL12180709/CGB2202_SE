@@ -4,6 +4,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Server {
@@ -16,6 +17,7 @@ public class Server {
      * 如果我们将Socket比喻为"电话"，那么ServerSocket相当于"总机"
      */
     private ServerSocket serverSocket;
+    private PrintWriter[] allOut = {};
 
     public Server() {
         try {
@@ -79,19 +81,30 @@ public class Server {
 
         @Override
         public void run() {
+
             Runnable r1 = new Runnable() {
                 @Override
                 public void run() {
                     InputStream in = null;
+                    PrintWriter pw = null;
                     try {
                         in = socket.getInputStream();
-                        InputStreamReader isr = new InputStreamReader(in,StandardCharsets.UTF_8);
+                        InputStreamReader isr = new InputStreamReader(in, StandardCharsets.UTF_8);
                         BufferedReader br = new BufferedReader(isr);
 
                         OutputStream out = socket.getOutputStream();
-                        OutputStreamWriter osw = new OutputStreamWriter(out,StandardCharsets.UTF_8);
+                        OutputStreamWriter osw = new OutputStreamWriter(out, StandardCharsets.UTF_8);
                         BufferedWriter bw = new BufferedWriter(osw);
-                        PrintWriter pw = new PrintWriter(bw,true);
+                        pw = new PrintWriter(bw, true);
+
+//                        将该输出流存入共享数组allOut中
+                        synchronized (Server.this) {
+                            allOut = Arrays.copyOf(allOut, allOut.length + 1);
+                            allOut[allOut.length - 1] = pw;
+                        }
+
+                        sendMessage(host + "上线了,当前在线人数：" + allOut.length);
+
 
                         Scanner scanner = new Scanner(System.in);
 
@@ -108,14 +121,39 @@ public class Server {
                          *
                          * */
                         while ((s = br.readLine()) != null) {
-                            System.out.println("客户端"+host+"说：" + s);
-                            s = scanner.nextLine();
-                            pw.println("服务端说："+s);
+//                            System.out.println("客户端" + host + "说：" + s);
+
+
+//                            遍历allOut数组，将消息发送给所以客户端
+                            sendMessage("客户端" + host + "说：" + s);
+
                         }
                     } catch (IOException e) {
 //                        e.printStackTrace();
-                    }finally {
+                    } finally {
+                        //处理客户端断开连接后的操作
+                        //将pw从数组allOut中删除
+//                        Arrays.copyOf(allOut, allOut.length - 2);
+                        synchronized (Server.this){
+                            for (int i = 0; i < allOut.length; i++) {
+                                if (allOut[i] == pw) {
+                                    allOut[i] = allOut[allOut.length - 1];
+                                    allOut = Arrays.copyOf(allOut, allOut.length - 1);
+                                    break;
+                                }
 
+                            }
+                        }
+
+
+                        sendMessage(host + "下线了，当前在线人数为：" + allOut.length);
+
+                        //处理客户端断开连接后操作
+                        try {
+                            socket.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
             };
@@ -123,6 +161,20 @@ public class Server {
             t1.start();
 
 
+        }
+
+        /*
+         *
+         * 将消息群发给所有客户端
+         * */
+
+        private void sendMessage(String line) {
+           synchronized (Server.this){
+                System.out.println(line);
+                for (int i = 0; i < allOut.length; i++) {
+                    allOut[i].println(host + "说:" + line);
+                }
+            }
         }
     }
 

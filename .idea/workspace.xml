@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dfb136e5-f803-4c6e-9503-6a420e6de138" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/src/Thread/DaemonThreadDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/PriorityDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/SleepDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/SleepDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/SyncDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/SyncDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/SyncDemo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/SyncDemo4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Thread/ThreadInfoDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/socket/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collection/CollectionDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collection/CollectionDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collection/CollectionDemo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collection/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/socket/Client1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/socket/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/Client1.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/socket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,13 +67,52 @@
       <recent name="E:\Projects\IdeaProjects\CGB2202\resource" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.CollectionDemo3">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="socket.Client" />
       <module name="CGB2202" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.CollectionDemo1" />
+      <module name="CGB2202" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.CollectionDemo2" />
+      <module name="CGB2202" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.CollectionDemo3" />
+      <module name="CGB2202" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,70 +133,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SyncDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.SyncDemo2" />
-      <module name="CGB2202" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SyncDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.SyncDemo3" />
-      <module name="CGB2202" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SyncDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Thread.SyncDemo4" />
-      <module name="CGB2202" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Thread.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SyncDemo2" />
-      <item itemvalue="Application.SyncDemo3" />
-      <item itemvalue="Application.SyncDemo4" />
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.Client" />
+      <item itemvalue="Application.CollectionDemo1" />
+      <item itemvalue="Application.CollectionDemo2" />
+      <item itemvalue="Application.CollectionDemo3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CollectionDemo3" />
+        <item itemvalue="Application.CollectionDemo2" />
+        <item itemvalue="Application.CollectionDemo1" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="Application.SyncDemo4" />
-        <item itemvalue="Application.SyncDemo3" />
-        <item itemvalue="Application.SyncDemo2" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +185,10 @@
       <workItem from="1648798436997" duration="688000" />
       <workItem from="1648799555953" duration="7920000" />
       <workItem from="1648811582312" duration="734000" />
-      <workItem from="1648861470524" duration="3062000" />
+      <workItem from="1648861470524" duration="8427000" />
+      <workItem from="1648879279926" duration="2769000" />
+      <workItem from="1648882226180" duration="3973000" />
+      <workItem from="1648888317002" duration="4343000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1648643639401</created>
@@ -244,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648719438806</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="第一次提交">
+      <created>1648864580339</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1648864580339</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
