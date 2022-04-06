@@ -38,8 +38,8 @@ public class Client {
             System.out.println("正在连接服务端...");
 //            socket = new Socket("10.1.188.39", 8088);
 //            socket = new Socket("10.1.188.89", 8088);
-//            socket = new Socket("10.1.188.86", 8088);
-            socket = new Socket("10.1.188.58", 8088);
+            socket = new Socket("10.1.188.86", 8088);
+//            socket = new Socket("10.1.188.58", 8088);
 //            socket = new Socket("10.1.188.98", 8088);
 //            socket = new Socket("10.1.188.103", 8088);
 //            socket = new Socket("192.168.86.95", 8088);

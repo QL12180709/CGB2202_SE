@@ -4,7 +4,8 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class Server {
@@ -17,7 +18,8 @@ public class Server {
      * 如果我们将Socket比喻为"电话"，那么ServerSocket相当于"总机"
      */
     private ServerSocket serverSocket;
-    private PrintWriter[] allOut = {};
+    private Collection<PrintWriter> allOut = new ArrayList<>();
+//    private PrintWriter[] allOut = {};
 
     public Server() {
         try {
@@ -99,11 +101,12 @@ public class Server {
 
 //                        将该输出流存入共享数组allOut中
                         synchronized (Server.this) {
-                            allOut = Arrays.copyOf(allOut, allOut.length + 1);
-                            allOut[allOut.length - 1] = pw;
+                            allOut.add(pw);
+//                            allOut = Arrays.copyOf(allOut, allOut.length + 1);
+//                            allOut[allOut.length - 1] = pw;
                         }
 
-                        sendMessage(host + "上线了,当前在线人数：" + allOut.length);
+                        sendMessage(host + "上线了,当前在线人数：" + allOut.size());
 
 
                         Scanner scanner = new Scanner(System.in);
@@ -134,19 +137,29 @@ public class Server {
                         //处理客户端断开连接后的操作
                         //将pw从数组allOut中删除
 //                        Arrays.copyOf(allOut, allOut.length - 2);
-                        synchronized (Server.this){
-                            for (int i = 0; i < allOut.length; i++) {
-                                if (allOut[i] == pw) {
-                                    allOut[i] = allOut[allOut.length - 1];
-                                    allOut = Arrays.copyOf(allOut, allOut.length - 1);
+                        synchronized (Server.this) {
+                            /*Iterator<PrintWriter> it = allOut.iterator();
+                            while (it.hasNext()) {
+                                it.next();
+                                if (pw == it) {
+                                    it.remove();
                                     break;
                                 }
+                            }*/  //错误想法
+                            allOut.remove(pw);//正确
 
-                            }
+//                            for (int i = 0; i < allOut.length; i++) {
+//                                if (allOut[i] == pw) {
+//                                    allOut[i] = allOut[allOut.length - 1];
+//                                    allOut = Arrays.copyOf(allOut, allOut.length - 1);
+//                                    break;
+//                                }
+//                            }
                         }
 
 
-                        sendMessage(host + "下线了，当前在线人数为：" + allOut.length);
+                        sendMessage(host + "下线了，当前在线人数为：" + allOut.size());
+//                        sendMessage(host + "下线了，当前在线人数为：" + allOut.length);
 
                         //处理客户端断开连接后操作
                         try {
@@ -169,11 +182,14 @@ public class Server {
          * */
 
         private void sendMessage(String line) {
-           synchronized (Server.this){
-                System.out.println(line);
-                for (int i = 0; i < allOut.length; i++) {
-                    allOut[i].println(host + "说:" + line);
+            synchronized (Server.this) {
+//                System.out.println(line);
+                for (PrintWriter pw : allOut) {
+                    System.out.println(line);
                 }
+                /*for (int i = 0; i < allOut.length; i++) {
+                    allOut[i].println(host + "说:" + line);
+                }*/
             }
         }
     }
