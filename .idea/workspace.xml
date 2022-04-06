@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb136e5-f803-4c6e-9503-6a420e6de138" name="Default Changelist" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/src/Thread/SynchronizedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection/ArrayToListDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection/CollectionDemo4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection/CollectionToArrayDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection/IteratorDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection/ListDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection/ListDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection/ListDemo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection/NewForDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collection/SortListDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/h06/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/h06/Test02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/h06/Test03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/h06/Test04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/h06/Test05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/h06/Test06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/Client1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/socket/Test.java" beforeDir="false" />
-    </list>
+    <list default="true" id="dfb136e5-f803-4c6e-9503-6a420e6de138" name="Default Changelist" comment="第一次提交" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,7 +185,7 @@
       <workItem from="1649121435653" duration="2325000" />
       <workItem from="1649206962624" duration="7973000" />
       <workItem from="1649215533985" duration="4882000" />
-      <workItem from="1649226474806" duration="10535000" />
+      <workItem from="1649226474806" duration="10901000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1648643639401</created>
@@ -279,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648892913741</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="第一次提交">
+      <created>1649237966602</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649237966602</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
